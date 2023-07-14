@@ -17,7 +17,7 @@ services:
     networks:
       - mynet
   lb:
-    image: 'loadbalancer:v0.3'
+    image: 'abhyuni/loadbalancer'
     volumes:
       - type: bind
         source: ./ubuntu_nginx_loadbalancer/nginx/sites-available
